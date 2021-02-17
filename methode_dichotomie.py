@@ -16,7 +16,7 @@ def g(x):
 
 def methode_dichotomie(a,b):        #on choisit ici l'encadrement (le plus petit possible) de la solution
     half = (a+b)/2
-    if (b-a) <= 10**-2:             #on indique ici la précision voulue
+    if (b-a) <= 10**-3:             #on indique ici la précision voulue
         return round(half, 2)       #on arrondit le résultat à x décimales près (on peut considérer ne pas être plus précis que demandé au départ)
     else:
         if g(half)*g(b)>0:
