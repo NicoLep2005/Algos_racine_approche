@@ -23,7 +23,7 @@ méthode de Newton basée sur les tangentes et beaucoup plus efficace que la dic
 '''
 
 def methode_de_Newton(x0):               #on fait passer en argument valeur proche de la racine (attention aux domaines de définition !)
-    if abs(g(x0)/dg(x0)) >= 10**-2:      #on indique ici la précision voulue
+    if abs(g(x0)/dg(x0)) >= 10**-3:      #on indique ici la précision voulue
         return methode_de_Newton(x0-(g(x0)/dg(x0)))
     else:
         return (round(x0, 2))            #on arrondit le résultat à x décimales près (on peut considérer ne pas être plus précis que la demandé au départ)
